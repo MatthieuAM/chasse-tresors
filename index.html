@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chasse au trésor</title>
+	<meta charset="utf-8">
+	<style>
+		#hidden-div {
+			display: none;
+		}
+	</style>
+
+	<link rel="stylesheet" href="chasse.css">
+</head>
+<body>
+	<h1>Bienvenue sur la chasse au trésor!</h1>
+	<p>Felicitation tu es arrivé jusqu'ici <br>
+	
+	Maintenant une voiture t'attend non loin de là
+	
+	</p>
+
+	<a href="chasse2.html">Passer a la suite</a>
+
+
+
+	<script>
+		function checkCode() {
+			var inputCode = document.getElementById("code").value;
+			if (inputCode === "326") {
+				document.getElementById("hidden-div").style.display = "block";
+			} else {
+				alert("Code incorrect, veuillez réessayer.");
+			}
+		}
+	</script>
+</body>
+<script src="chasse.js"></script>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>

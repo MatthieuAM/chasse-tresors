@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chasse au trésor</title>
+	<meta charset="utf-8">
+	<style>
+		#hidden-div {
+			display: none;
+		}
+	</style>
+
+<link rel="stylesheet" href="chasse.css">
+
+</head>
+<body>
+	<h1>Bienvenue sur la chasse au trésor!</h1>
+	<p>Pour accéder à la page de la chasse au trésor, veuillez entrer le code d'accès:</p>
+	<form>
+		<label class="taille-form" for="code">Code d'accès:</label>
+		<input class="taille-form" type="text" id="code" name="code" required>
+		<button class="taille-form" type="button" onclick="checkCode()">Entrer</button>
+	</form>
+	<div id="hidden-div">
+		<p>Félicitations, vous avez trouvé le trésor! <br>
+			Ton trésor se trouve dans le grand placard blanc dans l'entrée de la maison a gauche en bas
+			<br><br><br>
+	
+<br><br><br>
+<a href="chasse18.html">Passer a la suite</a>
+        </p>
+		<!-- Ajoutez ici les énigmes ou indices pour la chasse au trésor -->
+	</div>
+
+<p>Mon premier est un objet qui est souvent utilisé pour décorer les jardins. Je suis fait de pierre et j'ai la forme d'un animal. Pour me trouver, vous devez chercher dans un jardin  </p>
+<br>
+<p>Mon deuxieme est un objet en plastique qui est souvent utilisé pour arroser les plantes, </p>
+<br>
+<p>Mon troisieme est dans une endroit qui doit normalement etre frais mais...</p>
+	
+
+
+	<script>
+		function checkCode() {
+			var inputCode = document.getElementById("code").value;
+			if (inputCode === "100722") {
+				document.getElementById("hidden-div").style.display = "block";
+			} else {
+				alert("Code incorrect, veuillez réessayer.");
+			}
+		}
+	</script>
+
+
+</body>
+</html>
